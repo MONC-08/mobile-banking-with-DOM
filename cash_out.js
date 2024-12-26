@@ -9,6 +9,9 @@ document.getElementById('cash-out-btn')
             const actualBalance = getBalanceById('actual-balance');
             const newBalance = actualBalance - cashOutAmount;
             document.getElementById('actual-balance').innerText = newBalance;
+
+            // logs
+            transactionHistory(cashOutAmount, newBalance)
         }
         else {
             alert('incorrect input.')

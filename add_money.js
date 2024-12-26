@@ -12,15 +12,8 @@ document.getElementById('add-money-btn')
 
             document.getElementById('actual-balance').innerText = newBalance;
 
-            //add to transaction logs
-
-            // const newDiv = document.createElement('div');
-            // newDiv.classList.add('bg-white-500')
-            // newDiv.innerHTML = `    
-            //     <p> Added amount : ${addAmount}, Balance : ${newBalance}</p>
-            // `
-            // document.getElementById('transaction-container').appendChild(newDiv);
-
+            // add to transaction logs
+            transactionHistory(addAmount, newBalance);
         }
         else {
             alert('incorrect input.')

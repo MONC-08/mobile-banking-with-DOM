@@ -16,6 +16,19 @@ function getBalanceById(id) {
     return actualBalance;
 }
 
-function setActualBalance() {
+// function setActualBalance() {
+
+// }
+
+function transactionHistory(amount, balance) {
+
+    const newDiv = document.createElement('div');
+    newDiv.classList.add('bg-amber-50', 'px-5', 'py-2', 'm-2', 'rounded-xl')
+    newDiv.innerHTML = `    
+        <span class = "text-xl font-semibold"> Amount : ${amount}</span>
+        <span  class = "text-xl font-semibold"> , </span>
+        <span class = "text-xl font-semibold">Balance : ${balance}
+    `
+    document.getElementById('transaction-container').appendChild(newDiv);
 
 }
