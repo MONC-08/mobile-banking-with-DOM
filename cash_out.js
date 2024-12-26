@@ -15,3 +15,9 @@ document.getElementById('cash-out-btn')
             return;
         }
     })
+
+// toggle section
+document.getElementById('show-cash-out-btn')
+    .addEventListener('click', function () {
+        showMySection('cash-out-section');
+    })

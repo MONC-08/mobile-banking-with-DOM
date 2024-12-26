@@ -28,17 +28,18 @@
                     <!-- actual balance ends -->
                     <div class="divider"></div>
 
-                    <!-- option button -->
+                    <!--show options button -->
                     <div class="">
-                        <button class="btn start-7">Add Money</button>
-                        <button class="btn start-7">Cash Out</button>
-                        <button class="btn start-7 block mx-auto mt-1">Transaction History</button>
+                        <button id="show-add-money-btn" class="btn start-7">Add Money</button>
+                        <button id="show-cash-out-btn" class="btn start-7">Cash Out</button>
+                        <button id="transaction-logs-btn" class="btn start-7 block mx-auto mt-1">Transaction
+                            History</button>
                     </div>
-                    <!-- option button ends -->
+                    <!--show options button ends -->
                     <div class="divider"></div>
 
                     <!-- add Money section starts -->
-                    <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div id="add-money-section" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                             <div class="form-control">
                                 <label class="label">
@@ -63,7 +64,7 @@
                     <!-- add Money section ends -->
 
                     <!-- cash out section starts -->
-                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div id="cash-out-section" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                             <div class="form-control">
                                 <label class="label">
@@ -87,11 +88,21 @@
                     </div>
                     <!-- cash out section ends -->
 
+                    <!-- transaction history section start -->
+                    <div id="transaction-logs-section" class="hidden">
+                        <div id="transaction-container">
+                            <h1 class="text-2xl">Transaction History</h1>
+                        </div>
+                    </div>
+
+                    <!-- transaction history section end -->
+
                 </div>
             </div>
         </div>
     </main>
     <script src="./utilities.js"></script>
+    <script src="./features.js"></script>
     <script src="./add_money.js"></script>
     <script src="./cash_out.js"></script>
 </body>
