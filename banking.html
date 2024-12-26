@@ -22,7 +22,7 @@
                     <div class="stats shadow">
                         <div class="stat">
                             <div class="stat-title">Available Balance</div>
-                            <div class="stat-value">10000</div>
+                            <div id="actual-balance" class="stat-value">10000</div>
                         </div>
                     </div>
                     <!-- actual balance ends -->
@@ -42,21 +42,21 @@
                         <form class="card-body">
                             <div class="form-control">
                                 <label class="label">
-                                    <span class="label-text">Phone</span>
+                                    <span class="label-text">Add Money</span>
                                 </label>
-                                <input id="phone-number" type="text" placeholder="phone" class="input input-bordered"
-                                    required />
+                                <input id="add-money-amount" type="text" placeholder="amount"
+                                    class="input input-bordered" />
                             </div>
                             <div class="form-control">
                                 <label class="label">
                                     <span class="label-text">Password</span>
                                 </label>
-                                <input id="password" type="password" placeholder="password" class="input input-bordered"
-                                    autocomplete="off" required />
+                                <input id="add-money-password" type="password" placeholder="password"
+                                    class="input input-bordered" autocomplete="off" required />
 
                             </div>
                             <div class="form-control mt-6">
-                                <button id="login-confirm" class="btn btn-primary">Login</button>
+                                <button id="add-money-btn" class="btn btn-primary">Add Money</button>
                             </div>
                         </form>
                     </div>
@@ -67,6 +67,8 @@
             </div>
         </div>
     </main>
+    <script src="./utilities.js"></script>
+    <script src="./add_money.js"></script>
 </body>
 
 </html>
